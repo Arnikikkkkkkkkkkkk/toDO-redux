@@ -1,0 +1,16 @@
+@import "/src/var.scss";
+
+.select {
+  width: 100%;
+  height: 50px;
+  padding: 5px 10px;
+  border: 2px solid $kimberly;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: $white;
+  background-color: $bleached-cedar;
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,61 @@
+@import "/src/var.scss";
+
+.from {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  width: 100%;
+  height: 800px;
+  border-radius: 10px;
+  padding: 20px 10px;
+  background-color: $from-background;
+}
+
+.title {
+  font-size: 1.5rem;
+  text-align: center;
+  color: $text-color;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid $content-border;
+  border-radius: 5px;
+  padding: 10px 10px;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.box {
+  display: flex;
+}
+
+.button {
+  width: 200px;
+  padding: 5px 5px;
+  text-align: center;
+  border: 2px solid $kimberly;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: $white;
+  background: linear-gradient(45deg, $heliotrope 30%, $electric-violet 70%);
+  transition: box-shadow 0.2s linear;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 10px $Water-leaf;
+  }
+
+  &:active {
+    box-shadow: 0 0 20px $Water-leaf;
+  }
+}

@@ -1,0 +1,45 @@
+@import "/src/var.scss";
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  border: 5px solid $item-border;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1.8rem;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.text {
+  font-size: 1.3rem;
+}
+
+.button {
+  width: 100px;
+  padding: 5px 5px;
+  text-align: center;
+  border: 2px solid $kimberly;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: $white;
+  background: linear-gradient(45deg, $heliotrope 30%, $electric-violet 70%);
+  transition: box-shadow 0.2s linear;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 10px $Water-leaf;
+  }
+
+  &:active {
+    box-shadow: 0 0 20px $Water-leaf;
+  }
+}
